@@ -30,23 +30,9 @@ function bakery_setup() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
-
-	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
 	add_theme_support( 'title-tag' );
-
-	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'header', 'bakery' ),
@@ -54,10 +40,7 @@ function bakery_setup() {
 		)
 	);
 
-	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
+
 	add_theme_support(
 		'html5',
 		array(
@@ -71,7 +54,6 @@ function bakery_setup() {
 		)
 	);
 
-	// Set up the WordPress core custom background feature.
 	add_theme_support(
 		'custom-background',
 		apply_filters(
@@ -135,9 +117,7 @@ function bakery_widgets_init() {
 }
 add_action( 'widgets_init', 'bakery_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
+
 function bakery_scripts() {
 	wp_enqueue_style( 'bakery-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'mainStyle', get_template_directory_uri() . '/assets/css/style.css', array(),1.1 );
@@ -150,26 +130,12 @@ function bakery_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'bakery_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
 require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
 require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
 require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/customPostType.php';
 require get_template_directory() . '/inc/headerWalker.php';

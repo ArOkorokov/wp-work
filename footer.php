@@ -30,33 +30,17 @@
 				<?
 				
 					wp_nav_menu( [
-						'theme_location'  => '',
-						'menu'            => '',
 						'container'       => 'div',
-						'container_class' => '',
-						'container_id'    => '',
 						'menu_class'      => 'footer-menu',
 						'menu_id'         => '',
 						'echo'            => true,
 						'fallback_cb'     => 'wp_page_menu',
-						'before'          => '',
-						'after'           => '',
-						'link_before'     => '',
-						'link_after'      => '',
 						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 						'depth'           => 0,
 						'walker'          => new FooterWalker,
 					] );
 				
 				?>
-				<!-- <ul class="footer-menu">
-					<li><a href="#" class="footer-menu__link">about</a></li>
-					<li><a href="#" class="footer-menu__link">How we works</a></li>
-					<li><a href="#" class="footer-menu__link">desserts</a></li>
-					<li><a href="#" class="footer-menu__link">team</a></li>
-					<li><a href="tel:+12123533355" class="footer-menu__link">+1 212 343 33 55
-						</a></li>
-				</ul> -->
 				<div class="footer-contacts-wrapper">
 					<div class="footer-constacts">
 						<div class="footer-social_wrapper">

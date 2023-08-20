@@ -21,7 +21,8 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -31,19 +32,10 @@
 						<a href="<? echo home_url();?>" class="main-logo icon-logo"></a>
 						<?
 							wp_nav_menu( [
-								'theme_location'  => '',
-								'menu'            => '',
 								'container'       => 'div',
-								'container_class' => '',
-								'container_id'    => '',
 								'menu_class'      => 'menu__list',
-								'menu_id'         => '',
 								'echo'            => true,
 								'fallback_cb'     => 'wp_page_menu',
-								'before'          => '',
-								'after'           => '',
-								'link_before'     => '',
-								'link_after'      => '',
 								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 								'depth'           => 0,
 								'walker'          => new HeaderWalker,
