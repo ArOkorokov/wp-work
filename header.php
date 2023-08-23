@@ -32,6 +32,7 @@
 						<a href="<? echo home_url();?>" class="main-logo icon-logo"></a>
 						<?
 							wp_nav_menu( [
+								'menu'  		  => 'header',
 								'container'       => 'div',
 								'menu_class'      => 'menu__list',
 								'echo'            => true,

@@ -550,6 +550,8 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 445px;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -589,8 +591,15 @@ body::after {
 }
 
 .team-swiper-text {
-  padding: 0 25px 34px 25px;
+  padding: 0 10px 10px;
   line-height: 19.5px;
+  display: block;
+  max-height: 141px;
+}
+
+.team-swiper-text p{
+  max-height: 139px;
+  overflow: hidden;
 }
 
 .team-slider-navigation-wrapper {
@@ -675,7 +684,7 @@ body::after {
   -ms-grid-row-align: start;
       align-self: start;
   padding: 0 10px 0 10px;
-  max-height: 284px;
+  max-height: 182px;
   display: block;
   overflow: hidden;
 }
@@ -813,7 +822,6 @@ body {
 }
 
 .bakery-slider__titles {
-  text-align: center;
   max-width: 61.625rem;
   margin: auto;
 }
@@ -821,6 +829,7 @@ body {
 .bakery-slider__title {
   font-weight: 500;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .bakery-slider__subtitle {
@@ -840,7 +849,7 @@ body {
 
 .bakery-slider__contents {
   margin-top: 2.3125rem;
-  margin-left: 14.0625rem;
+  margin-left: 255px;
 }
 
 .bakery-slider__content-text {

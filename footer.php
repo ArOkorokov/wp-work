@@ -30,6 +30,7 @@
 				<?
 				
 					wp_nav_menu( [
+						'menu'  		  => 'footer',
 						'container'       => 'div',
 						'menu_class'      => 'footer-menu',
 						'menu_id'         => '',
