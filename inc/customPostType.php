@@ -27,7 +27,7 @@ function register_post_types(){
 		'show_in_nav_menus'   => true, 
 		'show_in_menu'           => null, 
 		
-		'show_in_rest'        => null, 
+		'show_in_rest'        => true, 
 		'rest_base'           => null, 
 		'menu_position'       => null,
 		'menu_icon'           => null,
@@ -66,7 +66,7 @@ function register_post_types(){
 		'show_in_nav_menus'   => true, // зависит от public
 		'show_in_menu'           => null, // показывать ли в меню админки
 		// 'show_in_admin_bar'   => null, // зависит от show_in_menu
-		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
 		'menu_position'       => null,
 		'menu_icon'           => null,
@@ -104,7 +104,7 @@ function register_post_types(){
 		'show_ui'             => true,
 		'show_in_nav_menus'   => true,
 		'show_in_menu'        => null,
-		'show_in_rest'        => null,
+		'show_in_rest'        => true,
 		'rest_base'           => null,
 		'menu_position'       => null,
 		'menu_icon'           => null,

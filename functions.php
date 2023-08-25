@@ -121,6 +121,7 @@ add_action( 'widgets_init', 'bakery_widgets_init' );
 function bakery_scripts() {
 	wp_enqueue_style( 'bakery-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'mainStyle', get_template_directory_uri() . '/assets/css/style.css', array(),1.1 );
+	wp_enqueue_style( 'custompost', get_template_directory_uri() . '/assets/css/single-custompost-style.css', array(),1.1 );
 	wp_style_add_data( 'bakery-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'bakery-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

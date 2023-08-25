@@ -29,7 +29,9 @@
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
-						<a href="<? echo home_url();?>" class="main-logo icon-logo"></a>
+						<a href="<? echo home_url();?>" class="main-logo icon-logo">
+							<?the_custom_logo()?>
+						</a>
 						<?
 							wp_nav_menu( [
 								'menu'  		  => 'header',

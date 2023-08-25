@@ -1,0 +1,133 @@
+/* 
+    Styles for additional Templates:
+    About, Desserts, How We Work, Team and so on.
+*/
+
+
+.single-team_wrapper {
+    display: flex;
+    gap: 50px;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 50px;
+}
+.single-team_img-wrapper {
+    width: 400px;
+}
+.single-team_img {
+    width: 400px;
+}
+.single-team_content-wrapper {
+    margin-top: 20px;
+}
+.single-team_content-title {
+    text-align: center;
+    font-size: 1.2em;
+}
+.single-team_content-subtitle {
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    margin: 0.5em 0 0.7em;
+}
+
+@media(max-width: 991.8px) {
+    .single-team_wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 20px;
+    }
+}
+@media(max-width: 460.8px) {
+    .single-team_img-wrapper {
+        width: 300px;
+        object-fit: cover;
+    }
+    .single-team_img {
+        width: 100%;
+    }
+}
+
+.team-page_wrapper {
+    max-width: 1280px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.team-page_img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.team-page_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.team-page_content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+.team-page_title,
+.team_position {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+@media(max-width: 992px) {
+    .team-page_content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .team-page_title {
+        text-align: center;
+    }
+}
+
+
+
+.price {
+    margin: 30px 40px 0 0 ;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: end;
+}
+.bakery-about_wrapper {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 30px;
+}
+.bakery-about_content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.bakery-about_block-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+}
+.bakery-about_title {
+    text-align: center;
+    text-transform:capitalize;
+    font-weight: 500;
+    font-size: 24px;
+}
+.bakery-about_main-text {
+    line-height: 28px;
+    font-style: italic;
+}
+
+.desserts-page  {
+    max-width: 1480px;
+    margin: auto;
+}
+.dessert-page__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

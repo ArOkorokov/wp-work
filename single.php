@@ -9,36 +9,31 @@
 
 get_header();
 ?>
-
-	
-	<?php
-
-$query = new WP_Query( 'post' );
-if( $query->have_posts() ){
-	while( $query->have_posts() ){
-		$query->the_post();
-		?>
-									
-		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		<?php the_content(); ?>
-		<?
-			if(has_post_thumbnail()) : ?>
-			<picture>
-				<img src="<? echo get_the_post_thumbnail_url()?>" alt="<?the_title()?>">
-			</picture>
-			<? else: ?><?endif ;?>
-				<div class="dessert-cost"><? echo the_field('price');?>
-				<? wp_reset_postdata();
-										
-			?>
-										
-		<?php
-	}
-	wp_reset_postdata();
-}
-else
-	echo 'Записей нет.';
+<?
+    $post_id = get_the_ID();
+    $aa = get_post_meta($post_id);
 ?>
+	
+<div class="single-team_wrapper">
+    <div class="single-team_img-wrapper">
+            <img class="single-team_img" src="<?
+            if(get_the_post_thumbnail_url()){
+                echo get_the_post_thumbnail_url();
+            } ?>" alt="<?the_title();?>">
+    </div>
+    <div class="single-team_content-wrapper">
+        <h3 class="single-team_content-title"><?the_title()?></h3>
+        <span class="single-team_content-subtitle">
+        </span>
+        <p class="single-team_content-content"><?the_content();?></p>
+		<p class="price">
+				<?
+                    if(isset($aa)) {
+                        echo get_post_meta($post_id, 'price', true);
+                    }
+                ?></p>
+    </div>
+</div>
 
 
 	

@@ -34,7 +34,8 @@ Template Post Type: page
 
 	<div class="team">
 		<div class="team-container">
-			<? get_template_part('temp-part/team_content'); ?>
+			<? get_template_part('temp-part/team_content');?>
+			
 		</div>
 	</div>
 

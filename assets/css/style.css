@@ -632,7 +632,7 @@ body::after {
 .desserts-title {
   text-align: center;
   font-weight: 500;
-  margin: 15px 0 54px;
+  margin: 75px 0 54px;
 }
 
 .dessert-card {
@@ -1057,7 +1057,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
+@media(max-width: 834px) {
+  .footer-container {
+    flex-direction: column-reverse;
+    padding: 20px 0 0;
+    
+  }
+}
 .footer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1091,7 +1097,12 @@ body {
   bottom: -13%;
   right: 0;
 }
-
+@media (max-width: 932px) {
+  .footer-menu::after,
+  .footer-menu::before {
+    right: 2%;
+  }
+}
 .footer-contacts-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -46,13 +46,16 @@
 					<div class="footer-constacts">
 						<div class="footer-social_wrapper">
 							<div class="footer-address">
-								You can find us in New York, located at 101 Avenue 11-88
+								<?									
+									the_field('own_address');
+								?>
+								
 							</div>
 							<div class="footer-social_link">
-								<a href="#" class="social_link-item icon-email"></a>
-								<a href="#" class="social_link-item icon-twitter"></a>
-								<a href="#" class="social_link-item icon-facebook"></a>
-								<a href="#" class="social_link-item icon-inst"></a>
+								<a href="mailto:?gmail.com" class="social_link-item icon-email" target="_blank"></a>
+								<a href="https://twitter.com/" class="social_link-item icon-twitter" target="_blank"></a>
+								<a href="https://www.facebook.com/" class="social_link-item icon-facebook" target="_blank"></a>
+								<a href="https://www.instagram.com/" class="social_link-item icon-inst" target="_blank"></a>
 							</div>
 						</div>
 					</div>
